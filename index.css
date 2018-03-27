@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0}
+*::after, *::before, *{ box-sizing: border-box;}
+a { text-decoration: none; color: inherit; }
+ul, ol{ list-style: none; }
+body{font-size: 18px;}
+
+
+h2{  color: #e75b1e;}
+.slide-img{
+    width: 75px;
+    height: 14px;
+    display: inline-block;
+}
