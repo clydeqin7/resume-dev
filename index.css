@@ -95,14 +95,9 @@ section.siteProject{
     text-align: center;
 }
 
-section.siteProject > .projectWrapper{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-
 section.siteProject  div.project{
     display: inline-block;
+    padding: 10px;
 }
 
 section.siteProject  div.project > img{
