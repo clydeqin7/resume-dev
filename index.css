@@ -3,11 +3,116 @@
 a { text-decoration: none; color: inherit; }
 ul, ol{ list-style: none; }
 body{font-size: 18px;}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.icon{
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
 
-
-h2{  color: #e75b1e;}
-.slide-img{
+h2{  color: #e75b1e; text-align: center;}
+.siteAboutme > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-img  {
     width: 75px;
     height: 14px;
     display: inline-block;
+    margin: 10px;
+}
+
+.slide-img.left i{
+    width: 65px;
+    height: 1px;
+    border-top: 1px solid #e75b1e;
+    margin: 0 0 2px 10px;
+    float: left;
+}
+
+.slide-img.left :nth-child(2n+1){
+    width: 55px;
+    margin: 0 0 2px 20px;
+}
+
+.slide-img.right i{
+    width: 65px;
+    height: 1px;
+    border-top: 1px solid #e75b1e;
+    margin: 0 10px 2px 0;
+    float: left;
+}
+
+.slide-img.right :nth-child(2n+1){
+    width: 55px;
+    margin: 0 10px 2px 0;
+}
+
+section.siteAboutme  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+section.siteAboutme > .left{
+    width: 50%;
+    border: 1px solid red;
+    float: left;
+    text-align: right;
+    padding: 10px;
+}
+
+section.siteAboutme  > .right{
+    width: 50%;
+    border: 1px solid blue;
+    float: left;    
+    padding: 10px;
+}
+
+section.siteAboutme  > .right  dt{
+    width: 20%;
+    float: left;
+}
+
+section.siteAboutme  > .right  dd{
+    width: 80%;
+    float: left;
+}
+
+section.siteProject{
+    text-align: center;
+}
+
+section.siteProject > .projectWrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+section.siteProject  div.project{
+    display: inline-block;
+}
+
+section.siteProject  div.project > img{
+    width: auto;
+    height: auto;
+    max-width: 320px;
+    max-height: 240px;
+    float: left;
+}
+section.siteProject  div.project >.projectText{
+    float: left;
+    max-width: 300px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+section.siteProject  div.project >.projectText > h3 {
+
 }
