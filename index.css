@@ -15,9 +15,10 @@ body{font-size: 18px;}
     overflow: hidden;
 }
 
-h2{  color: #e75b1e; text-align: center;}
+h2{  color: #e75b1e; text-align: center; margin: 10px;}
 .siteProject > h2,
-.siteAboutme > h2{
+.siteAboutme > h2,
+.siteSkills > h2{
     display: flex;
     justify-content: center;
     align-items: center;
