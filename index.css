@@ -1,17 +1,2 @@
-*{margin: 0; padding: 0}
-*::after, *::before, *{ box-sizing: border-box;}
-a { text-decoration: none; color: inherit; }
-ul, ol{ list-style: none; }
-body{font-size: 18px;}
-.clearfix::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.icon{
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
+
 

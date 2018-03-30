@@ -1,0 +1,56 @@
+@function px( $px ){
+  @return $px/$designWidth*10 + rem;
+}
+
+$designWidth : 936; // 数值是设计稿的宽度，你要根据设计稿的宽度填写
+
+*{margin: 0; padding: 0}
+*::after, *::before, *{ box-sizing: border-box;}
+a { text-decoration: none; color: inherit; }
+ul, ol{ list-style: none; }
+body{font-size: 18px;}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.icon{
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+div.wrapper{
+    width: px(822);
+    max-width: 822px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+header{
+    height: 142px;
+    width: 100%;
+    border: 1px solid blue;
+    background-color: #EE7000;
+    color: #fff;
+    padding-left: 32px;
+    padding-top: 46px;
+}
+
+header > h1{
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+header > img {
+    width: px(134);
+    height: px(134);
+    max-width: 134px;
+    max-height: 134px;
+    border: 2px solid #ddd;
+    position: relative;
+    right: 0;
+    top: 0;
+}
