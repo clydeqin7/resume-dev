@@ -29,6 +29,7 @@ div.wrapper{
 }
 
 header{
+    position: relative;
     height: 142px;
     width: 100%;
     border: 1px solid blue;
@@ -49,8 +50,20 @@ header > img {
     height: px(134);
     max-width: 134px;
     max-height: 134px;
-    border: 2px solid #ddd;
-    position: relative;
-    right: 0;
-    top: 0;
+    border: 6px solid #ddd;
+    position: absolute;
+    right: 30px;
+    top: 42px;
+}
+
+main{
+    width: px(512);
+    max-width: 512px;
+    border: 1px solid green;
+}
+
+aside{
+    width: px(282);
+    max-width: 282px;
+    border: 1px solid yellow;
 }
