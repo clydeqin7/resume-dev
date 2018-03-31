@@ -24,7 +24,6 @@ body{font-size: 18px;}
 div.wrapper{
     width: px(822);
     max-width: 822px;
-    border: 1px solid red;
     margin: 0 auto;
     background-color: #F3F3F3;
 }
@@ -33,7 +32,6 @@ header{
     position: relative;
     height: 142px;
     width: 100%;
-    border: 1px solid blue;
     background-color: #EE7000;
     color: #fff;
     padding-left: 32px;
@@ -60,20 +58,17 @@ header > img {
 main{
     width: px(512);
     max-width: 512px;
-    border: 1px solid green;
     float: left;
     padding: 30px;
 }
 
 aside{
-    width: px(282);
-    max-width: 282px;
-    border: 1px solid yellow;
+    width: px(310);
+    max-width:310px;
     float: right;
 }
 
 div.container{
-    border: 1px solid blue;
     background-color: #fff;
 }
 
@@ -99,11 +94,21 @@ div.titleLogo::after{
     left: 0;
 }
 
-section.jobObjective,
+section.jobObjective{
+    padding: 76px 22px 0 22px;
+    position: relative;
+    background-color: #fff;
+}
+section.jobObjective > div.titleLogoWrapper{
+    position: absolute;
+    top: 24px;
+    left: -12px;
+}
 section.project{
     margin-top: 24px;
     padding: 52px 22px 0 22px;
     position: relative;
+    background-color: #fff;
 }
 
 div.titleLogoWrapper{
@@ -148,4 +153,39 @@ div.projectItem > div.projectItemMain > img {
 
 div.projectItem > div.projectItemMain > .projectItemText > h5{
     margin: 3px 0;
+}
+
+aside{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+aside > section.aboutMe{
+    margin-top: 72px;
+}
+
+aside > section > h3{
+    margin-bottom: 16px;
+    color: #EE7000;
+}
+
+aside > section > hr {
+    margin-bottom: 12px;
+}
+
+aside > section > ul > li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+aside > section > ul > li.school{
+    display: flex;
+}
+
+aside > section > ul > li.school > svg{
+    // vertical-align: 1.15em;
+}
+
+aside > section > ul > li.school  > span{
+    margin-left: 0.3em;
 }
