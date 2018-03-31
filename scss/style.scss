@@ -26,6 +26,7 @@ div.wrapper{
     max-width: 822px;
     border: 1px solid red;
     margin: 0 auto;
+    background-color: #F3F3F3;
 }
 
 header{
@@ -60,10 +61,91 @@ main{
     width: px(512);
     max-width: 512px;
     border: 1px solid green;
+    float: left;
+    padding: 30px;
 }
 
 aside{
     width: px(282);
     max-width: 282px;
     border: 1px solid yellow;
+    float: right;
+}
+
+div.container{
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
+div.titleLogo{
+    width: 128px;
+    height: 36px;
+    background-color: #EE7000;
+    position: relative;
+    line-height: 36px;
+    text-align: center;
+}
+
+div.titleLogo > h3{
+    color: #ffffff;
+}
+
+div.titleLogo::after{
+    position: absolute;
+    content: '';
+    border-top: 12px solid #C45C00;
+    border-left: 12px solid transparent;
+    top: 36px;
+    left: 0;
+}
+
+section.jobObjective,
+section.project{
+    margin-top: 24px;
+    padding: 52px 22px 0 22px;
+    position: relative;
+}
+
+div.titleLogoWrapper{
+    position: absolute;
+    top: 0;
+    left: -12px;
+}
+
+div.item{
+    display: inline-block;
+    height: 30px;
+    padding: 3px 6px;
+    line-height: 24px;
+    text-align: center;
+}
+
+div.projectItem > div.projectItemHeader{
+    padding: 6px 6px 0 6px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.projectItem > hr{
+    margin: 3px 0;
+}
+div.projectItem > div.projectItemHeader > h4{
+    display: inline-block;
+}
+
+div.projectItem > div.projectItemMain{
+    display: flex;
+}
+
+div.projectItem > div.projectItemMain > img {
+    width: px(188);
+    max-width: 188px;
+    height: px(141);
+    max-height: 141px;
+    margin-right: 6px;
+}
+
+div.projectItem > div.projectItemMain > .projectItemText > h5{
+    margin: 3px 0;
 }
