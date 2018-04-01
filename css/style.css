@@ -27,6 +27,9 @@ body {
   fill: currentColor;
   overflow: hidden; }
 
+p, span {
+  word-break: break-all; }
+
 div.wrapper {
   width: 8.78205rem;
   max-width: 822px;
@@ -151,7 +154,8 @@ aside {
   padding-left: 24px;
   padding-right: 24px; }
 
-aside > section.aboutMe {
+aside > section.aboutMe,
+aside > section.mySkills {
   margin-top: 72px; }
 
 aside > section > h3 {

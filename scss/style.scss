@@ -21,6 +21,10 @@ body{font-size: 18px;}
     overflow: hidden;
 }
 
+p, span{
+    word-break: break-all;
+}
+
 div.wrapper{
     width: px(822);
     max-width: 822px;
@@ -166,7 +170,8 @@ aside{
     padding-right: 24px;
 }
 
-aside > section.aboutMe{
+aside > section.aboutMe,
+aside > section.mySkills{
     margin-top: 72px;
 }
 
