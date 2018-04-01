@@ -126,7 +126,7 @@ div.item{
 }
 
 div.projectItem > div.projectItemHeader{
-    padding: 6px 6px 0 6px;    
+    padding: 16px 6px 0 6px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,6 +135,12 @@ div.projectItem > div.projectItemHeader{
 div.projectItem > hr{
     margin: 3px 0;
 }
+
+div.projectItem  p{
+    font-size: 16px;
+    word-break: break-all;
+}
+
 div.projectItem > div.projectItemHeader > h4{
     display: inline-block;
 }
