@@ -16,7 +16,7 @@
         <header>
             <h1>覃琪</h1>
             <br>
-            <span>一句话介绍自己</span>
+            <p>自学前端半年，热爱技术，充满激情的前端工程师</p>
             <img src="http://p6hlzf0q1.bkt.clouddn.com/avatar.jpg" alt="" class="avatar">
         </header>
         <main>
@@ -35,6 +35,12 @@
                     </div>
                     <div class="item">
                         <svg class="icon" aria-hidden="true">
+                         <use xlink:href="#icon-shijian"></use>
+                        </svg>
+                        <span>协商后到岗</span>
+                    </div>                                                                                
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
                          <use xlink:href="#icon-wo1"></use>
                         </svg>
                         <span>全职</span>
@@ -45,18 +51,6 @@
                         </svg>
                         <span>重庆</span>
                     </div>
-                    <div class="item">
-                        <svg class="icon" aria-hidden="true">
-                         <use xlink:href="#icon-qian"></use>
-                        </svg>
-                        <span>5000</span>
-                    </div>
-                    <div class="item">
-                        <svg class="icon" aria-hidden="true">
-                         <use xlink:href="#icon-shijian"></use>
-                        </svg>
-                        <span>协商后到岗</span>
-                    </div>                                                                                
                 </section>
 
                 <section class="project">
@@ -119,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projectItem">
+                    <div id="page-break-flag" class="projectItem">
                         <div class="projectItemHeader">
                             <h4>海绵宝宝</h4>
                             <a href="http://clydeqin7.top/SpongeBob/index.html">
@@ -167,9 +161,9 @@
                             <img src="./img/work_canvas.png" alt="">
                             <div class="projectItemText">
                                 <h5>项目介绍</h5>
-                                <p>使用canvas实现的画板，有画笔、橡皮檫、保存、清除功能，能切换笔触大小，支持手机上操作。</p>
+                                <p>使用Canvas实现的画板，有画笔、橡皮檫、保存、清除功能，能切换笔触大小，支持手机上操作。</p>
                                 <h5>技术栈</h5>
-                                <p>HTML/CSS/JavaScript/canvas/Touch events</p>
+                                <p>HTML/CSS/JavaScript/Canvas/Touch events</p>
                             </div>
                         </div>
                     </div>
@@ -223,7 +217,7 @@
                                 <h5>项目介绍</h5>
                                 <p>基于Vue.js实现的简历制作工具，有登录/注册、保存、预览、分享等功能。通过leancloud实现登录/注册、保存功能。使用到Vue.js的自定义组件、组件通信、watch、computed等功能。</p>
                                 <h5>技术栈</h5>
-                                <p>Vue.js/HTML/CSS/JavaScript</p>
+                                <p>HTML/CSS/JavaScript/Vue.js</p>
                             </div>
                         </div>
                     </div>                                                                                               
@@ -294,7 +288,7 @@
                         <span>重庆</span>
                     </li>                    
                     <li>
-                        <a href="http://clydeqin7.top" title="技术博客">
+                        <a href="http://clydeqin7.top" title="技术博客" class="stress">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-network"></use>
                             </svg>                                
@@ -302,7 +296,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/clydeqin7" title="GitHub">
+                        <a href="https://github.com/clydeqin7" title="GitHub" class="stress">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>                                
@@ -316,18 +310,6 @@
                 <hr>
                 <ul>
                     <li>
-                        <h4>HTML</h4>
-                        <p>熟悉常用布局对语义化元素有一定了解</p>
-                    </li>
-                    <li>
-                        <h4>CSS</h4>
-                        <p>熟练使用CSS实现页面样式和布局，熟悉响应式布局和Flex布局，百分比自适应布局，对CSS3新特性较为熟悉。</p>
-                    </li>
-                    <li>
-                        <h4>JavaScript</h4>
-                        <p>熟悉JS如this、闭包、原型链等知识，对ES6新特性有一定了解。</p>
-                    </li>
-                    <li>
                         <h4>jQuery</h4>
                         <p>能独立使用jQuery完成事件绑定、动画特效、修改CSS等功能。</p>
                     </li>
@@ -339,16 +321,46 @@
                         <h4>HTTP</h4>
                         <p>了解HTTP协议，能够根据HTTP请求报文、响应报文和状态码排查问题，了解Cookie、Session、Cache-Control等知识。</p>
                     </li>
+                    <li>
+                        <h4>HTML</h4>
+                        <p>熟练使用常用HTML元素，能将HTML5语义、绘图等新语法特征在项目中应用。</p>
+                    </li>
+                    <li>
+                        <h4>CSS</h4>
+                        <p>熟练使用CSS实现页面样式和布局，熟悉响应式布局和Flex布局，百分比自适应布局，对CSS3新特性较为熟悉。</p>
+                    </li>
+                    <li>
+                        <h4>JavaScript</h4>
+                        <p>熟悉JS如this、闭包、原型链等知识，对ES6新特性有一定了解。</p>
+                    </li>
                      <li>
                         <h4>版本管理/命令行</h4>
                         <p>熟悉常用命令行，通过Git进行所有项目版本管理，详见个人GitHub。</p>
                     </li>
                     <li>
                         <h4>前端工具</h4>
-                        <p>在项目中使用过SASS工具。</p>
+                        <p>在项目中使用过SASS、Webpack等工具。</p>
                     </li>
                 </ul>
-            </section>                        
+            </section>   
+            <section class="workExperience">
+                <h3>工作经历</h3>
+                <hr>
+                <ul>
+                    <li><dl>
+                        <dt>2016.06-2016.10</dt>
+                        <dd><span>重庆和航科技</span><span>Android开发</span></dd>
+                    </dl></li>
+                    <li><dl>
+                        <dt>2017.02-2017.05</dt>
+                        <dd><span>重庆三科地产</span><span>销售</span></dd>
+                    </dl></li>
+                    <li><dl>
+                        <dt>2017.06-至今</dt>
+                        <dd><span>五里店街道办事处</span><span>文员</span></dd>
+                    </dl></li>
+                </ul>
+            </section>                                 
         </aside>
     </div>
 <script src="//at.alicdn.com/t/font_608800_wjvw0q5mfli35wmi.js"></script>    

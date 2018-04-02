@@ -8,7 +8,7 @@ $designWidth : 936; // 数值是设计稿的宽度，你要根据设计稿的宽
 *::after, *::before, *{ box-sizing: border-box;}
 a { text-decoration: none; color: inherit; }
 ul, ol{ list-style: none; }
-body{font-size: 18px;}
+body{font-size: 18px; color: #999;}
 .clearfix::after{
     content: '';
     display: block;
@@ -25,6 +25,15 @@ p, span{
     word-break: break-all;
 }
 
+@media print{
+    #page-break-flag{
+        page-break-after: always;
+    }
+}
+
+h2, h3, h4, h5{
+    color: #EE7000;
+}
 div.wrapper{
     width: px(822);
     max-width: 822px;
@@ -36,7 +45,7 @@ header{
     position: relative;
     height: 142px;
     width: 100%;
-    background-color: #EE7000;
+    background: #EE7000;
     color: #fff;
     padding-left: 32px;
     padding-top: 46px;
@@ -73,13 +82,13 @@ aside{
 }
 
 div.container{
-    background-color: #fff;
+    background: #fff;
 }
 
 div.titleLogo{
     width: 128px;
     height: 36px;
-    background-color: #EE7000;
+    background: #EE7000;
     position: relative;
     line-height: 36px;
     text-align: center;
@@ -135,6 +144,10 @@ div.projectItem > div.projectItemHeader{
     justify-content: space-between;
     align-items: center;
 }
+div.projectItem > div.projectItemHeader > h4{
+    width: px(170);
+    max-width: 170px;
+}
 
 div.projectItem > hr{
     margin: 3px 0;
@@ -171,12 +184,16 @@ aside{
 }
 
 aside > section.aboutMe,
-aside > section.mySkills{
+aside > section.mySkills,
+aside > section.workExperience{
     margin-top: 72px;
 }
 
 aside > section > h3{
     margin-bottom: 16px;
+    color: #EE7000;
+}
+.stress{
     color: #EE7000;
 }
 
@@ -193,10 +210,11 @@ aside > section > ul > li.school{
     display: flex;
 }
 
-aside > section > ul > li.school > svg{
-    // vertical-align: 1.15em;
-}
-
 aside > section > ul > li.school  > span{
     margin-left: 0.3em;
+}
+
+aside > section.workExperience dd {
+    display: flex;
+    justify-content: space-between;
 }
