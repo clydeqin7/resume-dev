@@ -128,6 +128,22 @@ section.jobObjective {
   background-color: #fff;
 }
 
+section.jobObjective .item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+}
+
+section.jobObjective .item-wrapper div.item {
+  display: inline-block;
+  height: 30px;
+  padding: 3px 6px;
+  line-height: 24px;
+  text-align: center;
+}
+
 section.jobObjective > div.titleLogoWrapper {
   position: absolute;
   top: 24px;
@@ -145,14 +161,6 @@ div.titleLogoWrapper {
   position: absolute;
   top: 0;
   left: -12px;
-}
-
-div.item {
-  display: inline-block;
-  height: 30px;
-  padding: 3px 6px;
-  line-height: 24px;
-  text-align: center;
 }
 
 div.projectItem > div.projectItemHeader {
@@ -291,6 +299,69 @@ aside > section.workExperience dd {
   main {
     width: 100vw;
     padding: 3vw;
+  }
+  main section.jobObjective {
+    padding: 76px 22px 0 22px;
+    position: relative;
+    background-color: #fff;
+  }
+  main section.jobObjective div.titleLogoWrapper {
+    position: absolute;
+    top: 24px;
+    left: -12px;
+  }
+  main section.project {
+    margin-top: 24px;
+    padding: 52px 22px 0 22px;
+    position: relative;
+    background-color: #fff;
+  }
+  main section.project div.projectItem > div.projectItemHeader {
+    padding: 16px 6px 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main section.project div.projectItem > div.projectItemHeader > h4 {
+    width: 170px;
+    max-width: 170px;
+  }
+  main section.project div.projectItem > hr {
+    margin: 3px 0;
+  }
+  main section.project div.projectItem p {
+    font-size: 16px;
+    word-break: break-all;
+  }
+  main section.project div.projectItem > div.projectItemHeader > h4 {
+    display: inline-block;
+  }
+  main section.project div.projectItem > div.projectItemMain {
+    display: flex;
+  }
+  main section.project div.projectItem > div.projectItemMain .img-wrapper {
+    width: 188px;
+    max-width: 188px;
+    min-width: 188px;
+    height: 141px;
+    max-height: 141px;
+    margin-right: 6px;
+    border: 1px solid #cccccc;
+  }
+  main section.project div.projectItem > div.projectItemMain .img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  main section.project div.projectItem > div.projectItemMain .img-wrapper.vertical {
+    width: 188px;
+    max-width: 188px;
+    min-width: 188px;
+    height: 220px;
+    max-height: 220px;
+    margin-right: 6px;
+  }
+  main section.project div.projectItem > div.projectItemMain > .projectItemText > h5 {
+    margin: 3px 0;
   }
   aside {
     width: 310px;
