@@ -1,8 +1,8 @@
-@function px( $px ){
-  @return $px/$designWidth*10 + rem;
-}
+// @function px( $px ){
+//   @return $px/$designWidth*10 + rem;
+// }
 
-$designWidth : 936; // 数值是设计稿的宽度，你要根据设计稿的宽度填写
+// $designWidth : 936; // 数值是设计稿的宽度，你要根据设计稿的宽度填写
 
 *{margin: 0; padding: 0}
 *::after, *::before, *{ box-sizing: border-box;}
@@ -35,7 +35,8 @@ h2, h3, h4, h5{
     color: #EE7000;
 }
 div.wrapper{
-    width: px(822);
+    // width: px(822);
+    width: 822px;
     max-width: 822px;
     margin: 0 auto;
     background-color: #F3F3F3;
@@ -58,8 +59,10 @@ header > h1{
 }
 
 header > img {
-    width: px(134);
-    height: px(180);
+    // width: px(134);
+    width: 134px;
+    // height: px(180);
+    height: 180px;
     max-width: 134px;
     max-height: 180px;
     border: 6px solid #ddd;
@@ -69,14 +72,16 @@ header > img {
 }
 
 main{
-    width: px(512);
+    // width: px(512);
+    width: 512px;
     max-width: 512px;
     float: left;
     padding: 30px;
 }
 
 aside{
-    width: px(310);
+    // width: px(310);
+    width: 310px;
     max-width:310px;
     float: right;
 }
@@ -145,7 +150,8 @@ div.projectItem > div.projectItemHeader{
     align-items: center;
 }
 div.projectItem > div.projectItemHeader > h4{
-    width: px(170);
+    // width: px(170);
+    width: 170px;
     max-width: 170px;
 }
 
@@ -166,12 +172,33 @@ div.projectItem > div.projectItemMain{
     display: flex;
 }
 
-div.projectItem > div.projectItemMain > img {
-    width: px(188);
-    max-width: 188px;
-    height: px(141);
-    max-height: 141px;
-    margin-right: 6px;
+div.projectItem > div.projectItemMain {
+    .img-wrapper{
+        // width: px(188);
+        width: 188px;
+        max-width: 188px;
+        min-width: 188px;
+        // height: px(141);
+        height: 141px;
+        max-height: 141px;
+        margin-right: 6px;
+        border: 1px solid #cccccc;
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .img-wrapper.vertical{
+        // width: px(188);
+        width: 188px;
+        max-width: 188px;
+        min-width: 188px;
+        // height: px(141);
+        height: 220px;
+        max-height: 220px;
+        margin-right: 6px;
+    }
 }
 
 div.projectItem > div.projectItemMain > .projectItemText > h5{
