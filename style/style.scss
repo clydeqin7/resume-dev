@@ -221,6 +221,7 @@ div.wrapper{
         }
     }
 }
+
 @media (max-width: 768px){
     div.wrapper{
         width: 100vw;
@@ -312,10 +313,6 @@ div.wrapper{
                         hr{
                             margin: 3px 0;
                         }
-                        p{
-                            font-size: 16px;
-                            word-break: break-all;
-                        }
                         div.projectItemHeader{
                             padding: 26px 6px 0 6px;
                             display: flex;
@@ -358,6 +355,9 @@ div.wrapper{
                             }
                         }
                     } 
+                }
+                section.project:last-child{
+                    padding-bottom: 10px;
                 }
             }
         }
@@ -402,7 +402,6 @@ div.wrapper{
             }
         }
     }
-    
 }
 
 @media print{

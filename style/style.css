@@ -345,10 +345,6 @@ div.wrapper aside section.workExperience dd {
   div.wrapper main div.container section.project div.projectItem hr {
     margin: 3px 0;
   }
-  div.wrapper main div.container section.project div.projectItem p {
-    font-size: 16px;
-    word-break: break-all;
-  }
   div.wrapper main div.container section.project div.projectItem div.projectItemHeader {
     padding: 26px 6px 0 6px;
     display: flex;
@@ -388,6 +384,9 @@ div.wrapper aside section.workExperience dd {
     height: 220px;
     max-height: 220px;
     margin-right: 6px;
+  }
+  div.wrapper main div.container section.project:last-child {
+    padding-bottom: 10px;
   }
   div.wrapper aside {
     width: 100vw;
