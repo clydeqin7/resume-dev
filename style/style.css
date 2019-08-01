@@ -189,7 +189,6 @@ div.wrapper main div.container section.project div.projectItem div.projectItemMa
 
 div.wrapper main div.container section.project div.projectItem div.projectItemMain .img-wrapper {
   width: 188px;
-  max-width: 188px;
   min-width: 188px;
   height: 141px;
   max-height: 141px;
@@ -204,7 +203,6 @@ div.wrapper main div.container section.project div.projectItem div.projectItemMa
 
 div.wrapper main div.container section.project div.projectItem div.projectItemMain .img-wrapper.vertical {
   width: 188px;
-  max-width: 188px;
   min-width: 188px;
   height: 220px;
   max-height: 220px;
@@ -354,29 +352,33 @@ div.wrapper aside section.workExperience dd {
     word-break: break-all;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemHeader {
-    padding: 16px 6px 0 6px;
+    padding: 26px 6px 0 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemHeader h4 {
-    width: 170px;
-    max-width: 170px;
-    display: inline-block;
+    display: block;
+    min-width: 80vw;
+  }
+  div.wrapper main div.container section.project div.projectItem div.projectItemHeader .duration {
+    font-size: 16px;
+    min-width: 180px;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemMain {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemMain .projectItemText > h5 {
     margin: 3px 0;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemMain .img-wrapper {
-    width: 188px;
-    max-width: 188px;
-    min-width: 188px;
+    width: 100%;
     height: 141px;
     max-height: 141px;
-    margin-right: 6px;
     border: 1px solid #cccccc;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemMain .img-wrapper img {
@@ -384,24 +386,25 @@ div.wrapper aside section.workExperience dd {
     height: 100%;
   }
   div.wrapper main div.container section.project div.projectItem div.projectItemMain .img-wrapper.vertical {
-    width: 188px;
-    max-width: 188px;
-    min-width: 188px;
+    width: 100%;
     height: 220px;
     max-height: 220px;
     margin-right: 6px;
   }
+  div.wrapper main div.container section.project:last-child {
+    padding-bottom: 10px;
+  }
   div.wrapper aside {
-    width: 310px;
-    max-width: 310px;
+    width: 100vw;
+    max-width: 100%;
     padding-left: 24px;
     padding-right: 24px;
-    float: right;
+    float: none;
   }
   div.wrapper aside section.aboutMe,
   div.wrapper aside section.mySkills,
   div.wrapper aside section.workExperience {
-    margin-top: 72px;
+    margin-top: 30px;
   }
   div.wrapper aside .stress {
     color: #EE7000;

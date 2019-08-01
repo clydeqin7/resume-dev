@@ -156,7 +156,6 @@ div.wrapper{
                         .img-wrapper{
                             // width: px(188);
                             width: 188px;
-                            max-width: 188px;
                             min-width: 188px;
                             // height: px(141);
                             height: 141px;
@@ -172,7 +171,6 @@ div.wrapper{
                         .img-wrapper.vertical{
                             // width: px(188);
                             width: 188px;
-                            max-width: 188px;
                             min-width: 188px;
                             // height: px(141);
                             height: 220px;
@@ -323,31 +321,32 @@ div.wrapper{
                             word-break: break-all;
                         }
                         div.projectItemHeader{
-                            padding: 16px 6px 0 6px;
+                            padding: 26px 6px 0 6px;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            align-content: center;
+                            flex-wrap: wrap;
                             h4{
-                                // width: px(170);
-                                width: 170px;
-                                max-width: 170px;
-                                display: inline-block;
+                                display: block;
+                                min-width: 80vw;
+                            }
+                            .duration{
+                                font-size: 16px;
+                                min-width: 180px;
                             }
                         }
                         div.projectItemMain{
                             display: flex;
+                            flex-direction: column;
+                            align-items: stretch;
                             .projectItemText > h5{
                                 margin: 3px 0;
                             }
                             .img-wrapper{
-                                // width: px(188);
-                                width: 188px;
-                                max-width: 188px;
-                                min-width: 188px;
-                                // height: px(141);
+                                width: 100%;
                                 height: 141px;
                                 max-height: 141px;
-                                margin-right: 6px;
                                 border: 1px solid #cccccc;
                                 img{
                                     width: 100%;
@@ -356,11 +355,7 @@ div.wrapper{
                                 }
                             }
                             .img-wrapper.vertical{
-                                // width: px(188);
-                                width: 188px;
-                                max-width: 188px;
-                                min-width: 188px;
-                                // height: px(141);
+                                width: 100%;
                                 height: 220px;
                                 max-height: 220px;
                                 margin-right: 6px;
@@ -368,19 +363,21 @@ div.wrapper{
                         }
                     } 
                 }
+                section.project:last-child{
+                    padding-bottom: 10px;
+                }
             }
         }
         aside{
-            // width: px(310);
-            width: 310px;
-            max-width:310px;
+            width: 100vw;
+            max-width:100%;
             padding-left: 24px;
             padding-right: 24px;
-            float: right;
+            float: none;
             section.aboutMe,
             section.mySkills,
             section.workExperience{
-                margin-top: 72px;
+                margin-top: 30px;
             }
             .stress{
                 color: #EE7000;
