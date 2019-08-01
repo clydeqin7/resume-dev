@@ -39,12 +39,6 @@ p, span {
   word-break: break-all;
 }
 
-@media print {
-  #page-break-flag {
-    page-break-after: always;
-  }
-}
-
 h2, h3, h4, h5 {
   color: #EE7000;
 }
@@ -207,6 +201,10 @@ div.wrapper main div.container section.project div.projectItem div.projectItemMa
   height: 220px;
   max-height: 220px;
   margin-right: 6px;
+}
+
+div.wrapper main div.container section.project:last-child {
+  padding-bottom: 10px;
 }
 
 div.wrapper aside {
@@ -391,9 +389,6 @@ div.wrapper aside section.workExperience dd {
     max-height: 220px;
     margin-right: 6px;
   }
-  div.wrapper main div.container section.project:last-child {
-    padding-bottom: 10px;
-  }
   div.wrapper aside {
     width: 100vw;
     max-width: 100%;
@@ -429,5 +424,15 @@ div.wrapper aside section.workExperience dd {
   div.wrapper aside section.workExperience dd {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media print {
+  #page-break-flag .img-wrapper.vertical {
+    width: 188px;
+    min-width: 188px;
+    height: 180px;
+    max-height: 180px;
+    margin-right: 6px;
   }
 }
