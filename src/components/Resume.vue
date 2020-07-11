@@ -1,6 +1,7 @@
 <template>
   <div class="resume">
     I'm clyde
+    <div class="box"></div>
   </div>
 </template>
 
@@ -11,4 +12,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.resume {
+  .box {
+    width: 300px;
+    height: 200px;
+    background-color: #aaa;
+  }
+}
+</style>
