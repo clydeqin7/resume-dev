@@ -18,6 +18,7 @@ export default {
     width: 300px;
     height: 200px;
     background-color: #aaa;
+    border: 1px solid red;
   }
 }
 </style>
